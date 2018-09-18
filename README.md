@@ -3,6 +3,10 @@
 
 Supporting information that contains all the input and forcing conditions files required to reproduce the experiments from the manusript: **Interpretation of long-term stratigraphic sequences in a source-to-sink numerical framework**.
 
+<div align="center">
+    <img width=950 src="https://github.com/badlands-model/pyBadlands-Published/blob/master/G3-Australia/visual/topochange.png" alt="Topographic evolution at given time intervals" title="Topographic evolution at given time intervals"</img>
+</div>
+
 You will need to download and install <a href='https://github.com/badlands-model/pyBadlands/releases' target="_blank">Badlands v2.0.0<a/> to run these experiments.
 
 [![DOI](https://zenodo.org/badge/51286954.svg)](https://zenodo.org/badge/latestdoi/51286954)
