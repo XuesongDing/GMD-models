@@ -19,6 +19,6 @@ An easy installation is provided through our Docker image _(pyBadlands-demo-seri
 
 + **data**: This folder contains the node file for initial surface, the sea-level file and the thermal subsidence. 
 + **images**: This folder contains images used in post-processing scripts.
-+ **Run_pybadlands.ipynb**: Model settings and run badlands model.
++ **Run_pyBadlands.ipynb**: Model settings and run badlands model.
 + **strataAnalyse.ipynb & strataAnalyse.py**: Post-processing scripts to visualize predicted stratigraphic architecture and associated interpretations. 
 + **XmL file**: Main entry point for defining the initial and forcing conditions used by **Badlands** to run any model (this is required)
