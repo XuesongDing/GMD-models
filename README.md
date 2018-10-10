@@ -1,4 +1,4 @@
-# ESurf input
+# GMD input
 
 
 Supporting information that contains all the input and forcing conditions files required to reproduce the experiments from the manusript: **Interpretation of long-term stratigraphic sequences in a source-to-sink numerical framework**.
