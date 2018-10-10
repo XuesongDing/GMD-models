@@ -5,7 +5,7 @@ Supporting information that contains all the input and forcing conditions files 
 
 
 <div align="center">
-    <img width=700 src="https://github.com/XuesongDing/ESurf-models/blob/master/images/StratArchitecture.png" alt="Predicted stratal architecture from pyBadlands" title="Predicted stratal architecture from pyBadlands"</img>
+    <img width=700 src="https://github.com/XuesongDing/GMD-models/blob/master/images/StratArchitecture.png" alt="Predicted stratal architecture from pyBadlands" title="Predicted stratal architecture from pyBadlands"</img>
 </div>
 
 
