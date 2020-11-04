@@ -74,7 +74,7 @@ def viewData(x0 = None, y0 = None, width = 800, height = 400, linesize = 3, colo
         y=y0,
         mode='lines',
         line=dict(
-            shape='line',
+            shape='linear',
             color = color,
             width = linesize
         ),
@@ -156,7 +156,7 @@ def viewSection(width = 800, height = 400, cs = None, dnlay = None,
         y=cs.secDep[0],
         mode='lines',
         line=dict(
-            shape='line',
+            shape='linear',
             width = linesize+2,
             color = 'rgb(0, 0, 0)'
         )
@@ -169,7 +169,7 @@ def viewSection(width = 800, height = 400, cs = None, dnlay = None,
             y=cs.secDep[i],
             mode='lines',
             line=dict(
-                shape='line',
+                shape='linear',
                 width = linesize,
                 color = 'rgb(0,0,0)'
             ),
@@ -184,7 +184,7 @@ def viewSection(width = 800, height = 400, cs = None, dnlay = None,
         y=cs.secDep[nlay-1],
         mode='lines',
         line=dict(
-            shape='line',
+            shape='linear',
             width = linesize+2,
             color = 'rgb(0, 0, 0)'
         ),
@@ -198,7 +198,7 @@ def viewSection(width = 800, height = 400, cs = None, dnlay = None,
         y=cs.secDep[0],
         mode='lines',
         line=dict(
-            shape='line',
+            shape='linear',
             width = linesize+2,
             color = 'rgb(0, 0, 0)'
         )
@@ -535,7 +535,7 @@ def viewSectionST(width = 800, height = 400, cs = None, dnlay = None, colors=Non
         y=cs.secDep[0],
         mode='lines',
         line=dict(
-            shape='line',
+            shape='linear',
             width = linesize+2,
             color = 'rgb(0, 0, 0)'
         )
@@ -548,7 +548,7 @@ def viewSectionST(width = 800, height = 400, cs = None, dnlay = None, colors=Non
             y=cs.secDep[i],
             mode='lines',
             line=dict(
-                shape='line',
+                shape='linear',
                 width = linesize,
                 color = 'rgb(0,0,0)'
             ),
@@ -563,7 +563,7 @@ def viewSectionST(width = 800, height = 400, cs = None, dnlay = None, colors=Non
         y=cs.secDep[nlay-1],
         mode='lines',
         line=dict(
-            shape='line',
+            shape='linear',
             width = linesize+2,
             color = 'rgb(0, 0, 0)'
         ),
@@ -577,7 +577,7 @@ def viewSectionST(width = 800, height = 400, cs = None, dnlay = None, colors=Non
         y=cs.secDep[0],
         mode='lines',
         line=dict(
-            shape='line',
+            shape='linear',
             width = linesize+2,
             color = 'rgb(0, 0, 0)'
         )
@@ -732,7 +732,7 @@ class stratalSection:
         """
 
         for i in range(0, self.ncpus):
-            df = h5py.File('%s/sed.time%s.p%s.hdf5'%(self.folder, timestep, i), 'r')
+            df = h5py.File('%s/sed.time%s.hdf5'%(self.folder, timestep), 'r')
             #print(list(df.keys()))
             coords = np.array((df['/coords']))
             layDepth = np.array((df['/layDepth']))
@@ -768,7 +768,7 @@ class stratalSection:
         """
 
         for i in range(0, self.ncpus):
-            df = h5py.File('%s/sed.time%s.p%s.hdf5'%(self.folder, timestep, i), 'r')
+            df = h5py.File('%s/sed.time%s.hdf5'%(self.folder, timestep), 'r')
             #print(list(df.keys()))
             if timestep > 1+nstep:
                 coords = np.array((df['/coords']))
